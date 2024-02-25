@@ -1,0 +1,142 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color: white;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    background-color: hsl(233, 47%, 7%);
+    display: grid;
+    place-content: center;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0;
+    
+}
+.card{
+    margin: 1em;
+    background-color: hsl(244, 38%, 16%);
+    width: 327px;
+    border-radius: 10px;
+}
+.imgMobile{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+.imgOverlay{
+    width: 327px;
+    background-color: hsl(278, 82%, 22%);
+    opacity: 0.6;
+    height: 240px;
+    position: absolute;
+    border-radius: 10px;
+}
+.text{
+    text-align: center;
+    padding: 0px 20px;
+}
+.head{
+    margin-top: 39px;
+    margin-bottom: 11.2px;
+    font-weight: 700;
+    color: white;
+    font-size: 28px;
+}
+.para{
+    font-size: 15px;
+    margin: 0 auto;
+    line-height: 165%;
+    width: 255px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+}
+.stats{
+    margin-top: 37px;
+    margin-bottom: 35px;
+    color: white;
+    font-size: 13px;
+}
+.stats h2{
+    margin-bottom: 0;
+}
+.stats p{
+    margin-top: 4.2px;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+.statI{
+    margin-top: 27px;
+}
+.imgOverlay1{
+    display: none;
+}
+.imgDesk{
+    display: none;
+}
+
+@media (min-width: 1000px) {
+    body{
+        height: 100vh;
+    }
+    .head{
+        font-size: 35px;
+        margin-top: 1px;
+        margin-bottom: 26px;
+    }
+    .imgMobile{
+        display: none;
+    }
+    .imgOverlay{
+       display: none;
+    }
+    .imgOverlay1{
+        display: flex;
+        width: 540px;
+        height: 465.715px;
+        background-color: hsl(278, 82%, 22%);
+        opacity: 0.6;
+        position: absolute;
+        border-radius: 0 10px 10px 0;
+        right: 0px;
+        
+    }
+    .imgDesk{
+        display: block;
+        border-radius: 0 10px 10px 0;
+    }
+    .card{
+        display: flex;
+        position: relative;
+        width: 1110px;
+    }
+    .text{
+        padding: 72px;
+        padding-right: 106px;
+        text-align: start;
+    }
+    .para{
+        width: auto;
+    }
+    .stats{
+        margin-bottom: 0;
+        margin-top: 74.75px;
+        display: flex;
+        width: 100%;
+    }
+    .stats p{
+        margin-bottom: 0px;
+    }
+    .statI{
+        flex-grow: 1;
+        text-align: start;
+        margin: auto;
+        height: auto;
+    }
+
+}
